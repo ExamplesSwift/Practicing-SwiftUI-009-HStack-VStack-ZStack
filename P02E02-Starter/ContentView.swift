@@ -33,6 +33,13 @@ struct ContentView: View {
     
     VStack(alignment: .leading) {
       
+      Text("Sign Up your Cat for Regex for Cats!")
+        .font(Font.system(.headline, design: .rounded))
+        .fontWeight(.heavy)
+        .foregroundColor(.white)
+        .shadow(color: .gray, radius: 5, x: 5, y: 5)
+        .padding([.top, .bottom])
+      
       HStack {
         
         Image("CatOnKeyboard")
