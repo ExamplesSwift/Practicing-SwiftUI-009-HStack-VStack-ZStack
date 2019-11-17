@@ -31,24 +31,26 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     
-    HStack {
-      
-      Image("CatOnKeyboard")
-        .resizable()
-        .frame(width: 50, height: 50)
-      
-      Button(action: {
-        print("Signed up")
-      }) {
-        HStack {
-          Text("Signed up")
-          Image(systemName: "checkmark.circle")
+    VStack {
+      HStack {
+        
+        Image("CatOnKeyboard")
+          .resizable()
+          .frame(width: 50, height: 50)
+        
+        Button(action: {
+          print("Signed up")
+        }) {
+          HStack {
+            Text("Signed up")
+            Image(systemName: "checkmark.circle")
+          }
         }
+      .padding()
+        .background(Color.catPurple)
+        .foregroundColor(.white)
+        .shadow(radius: 5)
       }
-    .padding()
-      .background(Color.catPurple)
-      .foregroundColor(.white)
-      .shadow(radius: 5)
     }
     
   }
