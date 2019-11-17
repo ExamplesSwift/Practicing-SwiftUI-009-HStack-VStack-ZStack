@@ -31,7 +31,8 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     
-    VStack {
+    VStack(alignment: .leading) {
+      
       HStack {
         
         Image("CatOnKeyboard")
