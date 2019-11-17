@@ -32,6 +32,19 @@ struct ContentView: View {
   var body: some View {
     
     ZStack{
+      
+      VStack {
+        Image("CatOnKeyboard")
+          .resizable()
+          .frame(width: 150, height: 150)
+        
+        Text("RegEx for Cast")
+          .font(Font.system(.largeTitle, design: .rounded))
+          .foregroundColor(.primary)
+          .padding()
+          .background(Color.red)
+          .cornerRadius(15)
+      }
         Spacer()
       .layoutPriority(1)
     }
