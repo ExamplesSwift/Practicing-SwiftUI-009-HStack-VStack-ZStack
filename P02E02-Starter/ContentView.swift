@@ -31,7 +31,7 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     
-    VStack(alignment: .center, spacing: 20) {
+    VStack(alignment: .leading, spacing: 20) {
       Text("RegEx for Cats")
         .font(Font.system(.largeTitle, design: .rounded))
         .fontWeight(.heavy)
