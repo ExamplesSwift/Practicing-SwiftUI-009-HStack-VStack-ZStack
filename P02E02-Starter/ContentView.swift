@@ -33,6 +33,12 @@ struct ContentView: View {
     
     ZStack{
       
+      Circle()
+        .fill(Color.catPurple)
+        .frame(width: 170, height: 170)
+        .padding()
+        .shadow(radius: 10)
+      
       VStack {
         Image("CatOnKeyboard")
           .resizable()
