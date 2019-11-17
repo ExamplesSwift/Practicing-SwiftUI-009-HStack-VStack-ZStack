@@ -31,21 +31,15 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     
-    VStack(alignment: .trailing, spacing: 20) {
-      Text("RegEx for Cats")
-        .font(Font.system(.largeTitle, design: .rounded))
-        .fontWeight(.heavy)
-        .foregroundColor(.white)
-        .shadow(color: .gray, radius: 5, x: 5, y: 5)
-        .padding([.leading, .trailing])
-      
-      Image("CatOnKeyboard")
-        .resizable()
-      .frame(width: 100, height: 100)
-        .scaledToFit()
-        .padding()
+    Button(action: {
+      print("Signed up")
+    }) { () -> PrimitiveButtonStyleConfiguration.Label in
+      <#code#>
     }
+  .padding()
     .background(Color.catPurple)
+    .foregroundColor(.white)
+  .shadow(radius: 5)
     
   }
 }
