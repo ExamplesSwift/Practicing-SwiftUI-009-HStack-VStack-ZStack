@@ -31,35 +31,12 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     
-    VStack(alignment: .leading) {
-      
-      Text("Sign Up your Cat for Regex for Cats!")
-        .font(Font.system(.headline, design: .rounded))
-        .fontWeight(.heavy)
-        .foregroundColor(.white)
-        .shadow(color: .gray, radius: 5, x: 5, y: 5)
-        .padding([.top, .bottom])
-      
-      HStack {
-        
-        Image("CatOnKeyboard")
-          .resizable()
-          .frame(width: 50, height: 50)
-        
-        Button(action: {
-          print("Signed up")
-        }) {
-          HStack {
-            Text("Signed up")
-            Image(systemName: "checkmark.circle")
-          }
-        }
-      .padding()
-        .background(Color.catPurple)
-        .foregroundColor(.white)
-        .shadow(radius: 5)
-      }
+    ZStack{
+        Spacer()
+      .layoutPriority(1)
     }
+    .background(Color.rayWenderlichGreen)
+    .edgesIgnoringSafeArea(.all)
     
   }
 }
