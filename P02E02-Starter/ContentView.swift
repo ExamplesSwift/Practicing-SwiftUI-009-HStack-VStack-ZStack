@@ -32,6 +32,11 @@ struct ContentView: View {
   var body: some View {
     
     HStack {
+      
+      Image("CatOnKeyboard")
+        .resizable()
+        .frame(width: 50, height: 50)
+      
       Button(action: {
         print("Signed up")
       }) {
