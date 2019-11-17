@@ -33,8 +33,11 @@ struct ContentView: View {
     
     Button(action: {
       print("Signed up")
-    }) { () -> PrimitiveButtonStyleConfiguration.Label in
-      <#code#>
+    }) {
+      HStack {
+        Text("Signed up")
+        Image(systemName: "checkmark.circle")
+      }
     }
   .padding()
     .background(Color.catPurple)
